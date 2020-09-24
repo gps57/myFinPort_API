@@ -75,6 +75,7 @@ namespace myFinPort_API.Controllers
         /// <param name="accountType">Account Type</param>
         /// <returns></returns>
         [Route("AddBankAccount")]
+        [HttpPost]
         public async Task<int> AddBankAccount
             (
                 int hhId,
@@ -91,6 +92,7 @@ namespace myFinPort_API.Controllers
         }
 
         [Route("UpdateBankById")]
+        [HttpPut]
         public async Task<int> UpdateBankById
     (
         int bankId,

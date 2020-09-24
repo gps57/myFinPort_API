@@ -71,6 +71,7 @@ namespace myFinPort_API.Controllers
         /// <param name="isDeleted">Specifies whether the household is deleted or not</param>
         /// <returns></returns>
         [Route("AddHousehold")]
+        [HttpPost]
         public async Task<int> AddHousehold
         (
             string householdName,

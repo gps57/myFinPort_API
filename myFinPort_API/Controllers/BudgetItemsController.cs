@@ -71,6 +71,7 @@ namespace myFinPort_API.Controllers
         /// <param name="isDeleted">Specifies whether or not the BudgetItem is deleted</param>
         /// <returns>Success (-1) or failure (0)</returns>
         [Route("AddBudgetItem")]
+        [HttpPost]
         public async Task<int> AddBudgetItem
         (
             int budgetId,

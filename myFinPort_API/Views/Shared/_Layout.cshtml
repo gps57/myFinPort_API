@@ -1,11 +1,19 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>@ViewBag.Title</title>
+  @Styles.Render("~/Content/css")
+  @Scripts.Render("~/bundles/modernizr")
+
+  <style>
+  .mx-3 {
+    margin-right: 3em !important;
+    margin-left: 3em !important;
+  }
+  </style>
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -31,7 +39,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - myFinPort Web Service API</p>
+            <p>&copy; @DateTime.Now.Year - myFinPort Web Service API by <a href="https://gs-portfolio-cf.netlify.app" target="_blank">Glen Stewart</a></p>
         </footer>
     </div>
 

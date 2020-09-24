@@ -74,6 +74,7 @@ namespace myFinPort_API.Controllers
         /// <param name="isDeleted">Says whether this transaction is deleted.</param>
         /// <returns></returns>
         [Route("AddTransaction")]
+        [HttpPost]
         public async Task<int> AddTransaction
         (
             int accountId,
@@ -104,6 +105,7 @@ namespace myFinPort_API.Controllers
         /// </summary>
         /// <param name="id">The PK of the transaction being deleted</param>
         /// <returns></returns>        [Route("DeleteTransactionDataById")]
+        [HttpDelete]
         public async Task<int> DeleteTransactionDataById(int id)
         {
             return await db.DeleteTransactionDataById(id);

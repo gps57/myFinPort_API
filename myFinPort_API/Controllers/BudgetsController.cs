@@ -70,6 +70,7 @@ namespace myFinPort_API.Controllers
         /// <param name="currentAmount">The new Budget's current balance</param>
         /// <returns></returns>
         [Route("AddBudget")]
+        [HttpPost]
         public async Task<int> AddBudget
         (
             int hhId,
